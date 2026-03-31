@@ -1,17 +1,20 @@
 # Kanban Board
 
-A Next.js 14 Kanban board with drag-and-drop task management.
+A Next.js Kanban board with drag-and-drop task management.
 
 ## Features
 
+- Multiple boards with create, rename, and delete
 - Three columns: **To Do**, **In Progress**, **Done**
-- Add task card with title, description, priority, assignee, and color tag
+- Add task card with title, description, priority, assignee, due date, and color tag
+- Subtasks checklist on cards and detailed checklist editing in modal
+- Due date support with red overdue badge
+- Card comments section stored in localStorage
+- Label/tag filter at the top by color tag
+- Card view and compact list view toggle
 - Drag and drop cards between columns with `@dnd-kit/core`
-- Task card UI with priority badge and assignee initials avatar
-- Click card to open modal with full details, edit, and delete actions
-- Column task count badges
-- Task persistence in `localStorage`
-- Responsive, clean white card UI
+- Task and board persistence in `localStorage`
+- Smooth transitions for drag feedback and column/card entry
 
 ## Getting Started
 
@@ -31,4 +34,4 @@ npm run build
 
 ## Deploy
 
-This app is fully deployable on Vercel with no external database.
+This app is deployable on Vercel with no external database.
